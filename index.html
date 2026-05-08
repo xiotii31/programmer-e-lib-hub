@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Programmer E-Lib Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <h2>Programmer E-Lib Hub</h2>
+    </div>
+
+    <div class="nav-links">
+      <a href="#reading">Reading</a>
+      <a href="#about">About</a>
+      <a href="#reflection">Reflection</a>
+    </div>
+
+    <div class="nav-buttons">
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+
+  <h1>Programmer E-Lib Hub</h1>
+
+  <p>
+    A simple online library of learning materials designed for college students.
+    Access summaries, PDF previews, and downloadable resources anytime and anywhere.
+  </p>
+
+  <div class="search-container">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search books, topics, or categories..."
+    />
+
+    <div id="searchResults" class="search-results"></div>
+
+  </div>
+
+</section>
+
+  <section class="stats">
+    <div>
+      <h3>6</h3>
+      <p>Main Topics</p>
+    </div>
+
+    <div>
+      <h3>PDF</h3>
+      <p>Viewable Materials</p>
+    </div>
+
+    <div>
+      <h3>24/7</h3>
+      <p>Accessible</p>
+    </div>
+
+    <div>
+      <h3>Free</h3>
+      <p>Student Resources</p>
+    </div>
+  </section>
+
+  <section class="categories">
+    <button class="filter-btn active" data-category="All">All</button>
+    <button class="filter-btn" data-category="Software">Software</button>
+    <button class="filter-btn" data-category="SDLC">SDLC</button>
+    <button class="filter-btn" data-category="Firebase">Firebase</button>
+    <button class="filter-btn" data-category="App Development">App Development</button>
+    <button class="filter-btn" data-category="MIT App Inventor">MIT App Inventor</button>
+    <button class="filter-btn" data-category="Artificial Intelligence">
+  Artificial Intelligence
+</button>
+
+<button class="filter-btn" data-category="Cross Platform">
+  Cross Platform
+</button>
+  </section>
+
+  <section class="section-title" id="reading">
+    <h2>Reading Materials</h2>
+    <p>
+      Choose a topic to view its summary first, then read the PDF directly on the next page.
+    </p>
+  </section>
+
+  <section class="library-grid" id="bookList">
+
+    <div class="book-card" data-title="Types of Software" data-category="Software" data-license="Teacher-Created">
+      <div class="tag">Software</div>
+      <h3>Types of Software</h3>
+      <p>
+        Learn about system software, application software, programming software,
+        DevOps and automation software, and embedded software.
+      </p>
+      <p class="license">License: Teacher-Created Material</p>
+
+      <div class="actions">
+        <a href="reader.html?topic=software">Read</a>
+      </div>
+    </div>
+
+    <div class="book-card" data-title="Types of SDLC" data-category="SDLC" data-license="Teacher-Created">
+      <div class="tag">SDLC</div>
+      <h3>Types of SDLC</h3>
+      <p>
+        Understand Software Development Life Cycle models such as Waterfall,
+        Agile, Spiral, Prototype, Incremental, RAD, V-Model, DevOps, and Big Bang.
+      </p>
+      <p class="license">License: Teacher-Created Material</p>
+
+      <div class="actions">
+        <a href="reader.html?topic=sdlc">Read</a>
+      </div>
+    </div>
+
+    <div class="book-card" data-title="Google Firebase" data-category="Firebase" data-license="Teacher-Created">
+      <div class="tag">Firebase</div>
+      <h3>Google Firebase</h3>
+      <p>
+        Learn about Firebase as a cloud-based backend platform for building,
+        managing, and scaling mobile and web applications.
+      </p>
+      <p class="license">License: Teacher-Created Material</p>
+
+      <div class="actions">
+        <a href="reader.html?topic=firebase">Read</a>
+      </div>
+    </div>
+
+    <div class="book-card" data-title="Authenticated Login and Sign Up Using Firebase" data-category="Firebase" data-license="Teacher-Created">
+      <div class="tag">Firebase</div>
+      <h3>Authenticated Log In & Sign Up Using Firebase</h3>
+      <p>
+        A step-by-step guide for creating a login and sign-up page using Firebase
+        Authentication and Android Studio.
+      </p>
+      <p class="license">License: Teacher-Created Material</p>
+
+      <div class="actions">
+        <a href="reader.html?topic=firebaseauth">Read</a>
+      </div>
+    </div>
+
+    <div class="book-card" data-title="Introduction to App Development" data-category="App Development" data-license="Teacher-Created">
+      <div class="tag">App Development</div>
+      <h3>Introduction to App Development</h3>
+      <p>
+        Learn about software, classes of software, basic principles, and the laws
+        of software evolution in application development.
+      </p>
+      <p class="license">License: Teacher-Created Material</p>
+
+      <div class="actions">
+        <a href="reader.html?topic=appdev">Read</a>
+      </div>
+    </div>
+
+    <div class="book-card" data-title="MIT App Inventor" data-category="MIT App Inventor" data-license="Teacher-Created">
+      <div class="tag">MIT App Inventor</div>
+      <h3>MIT App Inventor</h3>
+      <p>
+        Learn about MIT App Inventor, blocks-based coding, live testing,
+        and creating a sample Tic-Tac-Toe mobile app.
+      </p>
+      <p class="license">License: Teacher-Created Material</p>
+
+      <div class="actions">
+        <a href="reader.html?topic=mit">Read</a>
+      </div>
+    </div>
+
+    <div class="book-card"
+     data-title="AI Application Development"
+     data-category="Artificial Intelligence"
+     data-license="Teacher-Created">
+
+  <div class="tag">Artificial Intelligence</div>
+
+  <h3>AI Application Development</h3>
+
+  <p>
+    Learn how Artificial Intelligence helps developers through code generation,
+    debugging, testing automation, UI/UX design, documentation, and productivity.
+  </p>
+
+  <p class="license">License: Teacher-Created Material</p>
+
+  <div class="actions">
+    <a href="reader.html?topic=aiappdev">Read</a>
+  </div>
+</div>
+
+<div class="book-card"
+     data-title="Cross Platform Mobile Application Development"
+     data-category="Cross Platform"
+     data-license="Teacher-Created">
+
+  <div class="tag">Cross Platform</div>
+
+  <h3>Cross Platform Mobile App Development</h3>
+
+  <p>
+    Learn how developers create applications compatible with Android and iOS
+    using frameworks such as React Native, Flutter, Xamarin, and Ionic.
+  </p>
+
+  <p class="license">License: Teacher-Created Material</p>
+
+  <div class="actions">
+    <a href="reader.html?topic=crossplatform">Read</a>
+  </div>
+</div>
+
+  </section>
+
+  <section class="reflection" id="about">
+    <h2>About Programmer E-Lib Hub</h2>
+    <p>
+      The College Digital Library is a simple online learning platform created to organize
+      digital learning materials for college students. It provides topic summaries, PDF previews,
+      and downloadable materials in one accessible website.
+    </p>
+
+    <p>
+      This project aims to make learning materials easier to find, understand, and access.
+      Through organized categories and a clean interface, students can quickly locate resources
+      that support their academic needs.
+    </p>
+  </section>
+
+  <section class="reflection" id="reflection">
+    <h2>Accessibility and Digital Divide Reflection</h2>
+    <p>
+      This digital library is designed to support anytime and anywhere learning by providing
+      free educational resources that students can access using a phone, tablet, or computer.
+      It helps students continue learning even outside the classroom.
+    </p>
+
+    <p>
+      As future educators, this library helps bridge the Digital Divide by giving students access
+      to learning materials even when printed resources are limited. It supports learners who may
+      not always have enough physical books or classroom resources by providing organized and
+      accessible digital materials online.
+    </p>
+  </section>
+
+  <button class="help-btn" id="helpBtn">?</button>
+
+  <div class="help-box" id="helpBox">
+    <h3>Need Help?</h3>
+    <p>Use the search bar to find materials by title, category, or license.</p>
+    <p>Click Read to open the summary and PDF preview page.</p>
+    <p>You can download the PDF from the reader page.</p>
+    <button id="closeHelp">Close</button>
+  </div>
+
+  <footer>
+    <p>© 2026 Programmer E-Lib Hub | Learning Resources for Students</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

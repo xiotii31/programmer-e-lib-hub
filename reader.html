@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Read Material | Programmer E-Lib Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <h2>Programmer E-Lib Hub</h2>
+    </div>
+
+    <div class="nav-buttons">
+      <a class="back-btn" href="index.html">← Back to Library</a>
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+  <section class="reader-hero">
+    <h1 id="readerTitle">Learning Material</h1>
+    <p id="readerSubtitle">Summary and PDF Preview</p>
+  </section>
+
+  <main class="reader-container">
+
+    <section class="summary-card">
+      <h2>Summary</h2>
+      <p id="readerSummary"></p>
+
+      <h3>Key Topics</h3>
+      <ul id="readerTopics"></ul>
+
+      <p class="license" id="readerLicense"></p>
+    </section>
+
+    <section class="pdf-section">
+      <h2>PDF Preview</h2>
+
+      <iframe id="pdfViewer" class="pdf-viewer"></iframe>
+
+      <div class="download-area">
+        <a id="downloadBtn" class="download-btn" download>
+          Download PDF
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="video-section">
+  <h2>Related Video Lessons</h2>
+  <p>Watch these video lessons to better understand the topic.</p>
+
+  <div class="video-grid" id="videoGrid"></div>
+</section>
+
+<section class="topic-quiz-section">
+  <h2>Interactive Quiz</h2>
+  <p>Answer the 10-item quiz to check your understanding of this topic.</p>
+
+  <div id="quizContainer" class="quiz-container"></div>
+
+  <button id="submitQuiz" class="submit-quiz-btn">Submit Quiz</button>
+
+  <div id="quizScore" class="quiz-score"></div>
+</section>
+
+  <button class="help-btn" id="helpBtn">?</button>
+
+  <div class="help-box" id="helpBox">
+    <h3>Need Help?</h3>
+    <p>This page shows the summary of the selected material.</p>
+    <p>You can read the PDF directly on this page without downloading it.</p>
+    <p>Click the Download PDF button if you want to save a copy.</p>
+    <button id="closeHelp">Close</button>
+  </div>
+
+  <footer>
+    <p>© 2026 Programmer E-Lib Hub | Learning Resources for Students</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
